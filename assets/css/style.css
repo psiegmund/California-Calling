@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "Larish";
+  src: url(../fonts/LarishNeueSemibold.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 10rem;
+  font-family: "Larish";
+  line-height: 0.9;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Larish";
+}
+
+h3 {
+  font-size: 11rem;
+  font-family: "Larish";
+  line-height: 10rem;
+}
+
+.standardText {
+  color: inherit;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  padding: 2rem 0;
+  line-height: 1.5;
+}
+
+.sectionText {
+  color: inherit;
+  font-family: "Larish";
+  font-size: 3rem;
+  padding: 2rem 0;
+  line-height: 1.5;
+}
+
+.reference {
+  font-size: 1.5rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.rsvpButton {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid white;
+  padding: 25px 45px;
+  margin: 20px 0;
+}
+
+.rsvpButton:hover {
+  filter: invert(1);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes banner {
+  0% {
+    transform: translateX(-450vw);
+  }
+  50% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(-450vw);
+  }
+}
+header {
+  text-align: center;
+  background-color: black;
+  background-image: url("../img/map.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 30%;
+  margin: 0 0 10vh;
+  padding: 0 0 10vh 0;
+}
+
+.lineContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 15vh;
+  margin: 0 0 3vh;
+}
+
+.img-line {
+  height: 100%;
+  width: 100%;
+}
+
+h3:nth-of-type(2) {
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10vh 5vw;
+}
+
+.hero {
+  text-align: left;
+  width: 80%;
+  margin: 5vh 5vw 10vh;
+}
+.hero h1:first-of-type {
+  margin: 0 0 10vh;
+}
+.hero p {
+  padding: 1vh 0;
+}
+
+.stuckContainer {
+  color: black;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 240vh;
+  z-index: 5;
+}
+.stuckContainer .stuckElements-1 {
+  position: absolute;
+  width: 42%;
+  margin: 0 auto;
+  top: 40vh;
+}
+.stuckContainer .stuckElements-2 {
+  position: absolute;
+  width: 42%;
+  margin: 0 auto;
+  bottom: 45vh;
+}
+.stuckContainer .stuckElements-img-1 {
+  background-image: url(../img/action1.jpeg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  top: -10vh;
+  right: 8vw;
+}
+.stuckContainer .stuckElements-img-2 {
+  background-image: url(../img/action2.jpeg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  top: 20vh;
+  left: 5vw;
+  height: 15%;
+}
+.stuckContainer .stuckElements-img-3 {
+  background-image: url(../img/action3.jpeg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  right: 0;
+  top: 85vh;
+  height: 45%;
+}
+.stuckContainer .stuckElements-img-4 {
+  background-image: url(../img/action4.jpeg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  top: 115vh;
+  left: 22vw;
+  height: 60%;
+}
+.stuckContainer .stuckElements-img-5 {
+  background-image: url(../img/action5.jpeg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  top: 140vh;
+  right: 12vw;
+}
+.stuckContainer .stuckElements-img-6 {
+  background-image: url(../img/action6.jpeg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  left: 0;
+  top: 175vh;
+}
+.stuckContainer .stuckElements-img-7 {
+  background-image: url(../img/action7.jpeg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  top: 215vh;
+  right: 20vw;
+  width: 30%;
+  height: 250px;
+  z-index: 1;
+}
+
+.goldenBear {
+  background-color: black;
+  color: white;
+  padding: 10%;
+  height: 160vh;
+  position: relative;
+  z-index: 4;
+}
+
+.goldenBearContent {
+  display: flex;
+  align-items: flex-start;
+}
+.goldenBearContent div:first-of-type {
+  width: 50%;
+}
+.goldenBearContent div:last-of-type {
+  width: 50%;
+}
+.goldenBearContent div:last-of-type p {
+  padding: 0;
+}
+
+.goldenBear-img-1 {
+  background-image: url(../img/goldenbear.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  width: 100%;
+  height: 55%;
+  top: 90vh;
+  z-index: 2;
+}
+
+.goldenBear-img-2 {
+  background-image: url(../img/gb2.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  width: 100%;
+  height: 40%;
+  left: 52%;
+  top: 105vh;
+  z-index: 3;
+}
+
+.goldenBear-img-3 {
+  background-image: url(../img/cc-circle-2.png);
+  background-position: center;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  width: 70%;
+  height: 70%;
+  right: -35%;
+  top: 105vh;
+  z-index: -1;
+  animation: rotate 8s infinite linear;
+}
+
+.poppyBear {
+  background-color: white;
+  color: black;
+  padding: 10%;
+  height: 160vh;
+  position: relative;
+  z-index: 3;
+  margin: 40vh 0;
+}
+
+.poppyBearContent {
+  display: flex;
+  align-items: flex-start;
+}
+.poppyBearContent div:first-of-type {
+  width: 50%;
+}
+.poppyBearContent div:last-of-type {
+  width: 50%;
+}
+.poppyBearContent div:last-of-type p {
+  padding: 0;
+}
+
+.poppyBear-img-1 {
+  background-image: url(../img/rosebear.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  width: 100%;
+  height: 55%;
+  top: 90vh;
+  left: 40vw;
+  z-index: 2;
+}
+
+.poppyBear-img-2 {
+  background-image: url(../img/pb3.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  width: 100%;
+  height: 40%;
+  left: 20vw;
+  top: 105vh;
+  z-index: 3;
+}
+
+.joinUs {
+  background-color: black;
+  color: white;
+  padding: 10%;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.joinUsContent {
+  display: flex;
+  align-items: flex-start;
+}
+.joinUsContent div:first-of-type {
+  width: 40%;
+}
+.joinUsContent div:first-of-type p {
+  padding: 0;
+}
+
+.bannerContainer {
+  display: flex;
+  position: relative;
+  height: 150px;
+  width: 150vw;
+  transform: rotate(45deg) translateX(-100vw);
+}
+.bannerContainer .bannerBG {
+  position: absolute;
+  background-color: white;
+  height: 150px;
+  width: 150vw;
+  left: 50%;
+  z-index: 1;
+}
+.bannerContainer .bannerText p {
+  position: absolute;
+  display: block;
+  color: black;
+  white-space: nowrap;
+  font-family: "Larish";
+  font-size: 10rem;
+  left: 50%;
+  transform: translateX(-550vw);
+  z-index: 2;
+  animation: banner 40s infinite linear;
+}
+.bannerContainer .bannerText p span {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+footer {
+  position: relative;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10% 5%;
+  z-index: 0;
+}
+footer .social img {
+  width: 25px;
+  height: 25px;
+  margin: 0 0 20px 0;
+}
+footer .sfdw {
+  text-align: right;
+}
+footer .sfdw img {
+  width: 20%;
+}
+
+.standardText {
+  padding: 0 0 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

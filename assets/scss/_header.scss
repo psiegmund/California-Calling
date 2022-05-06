@@ -1,0 +1,44 @@
+header {
+    text-align: center;
+    background-color: black;
+    background-image: url("../img/map.svg");
+    @include background;
+    margin: 0 0 10vh;
+    padding: 0 0 10vh 0;
+}
+
+.lineContainer {
+    @include flexit;
+    height: 15vh;
+    margin: 0 0 3vh;
+}
+
+.img-line {
+    height: 100%;
+    width: 100%;
+}
+
+h3:nth-of-type(2) {
+    color: black;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.navigation {
+    @include flexit;
+    justify-content: space-between;
+    padding: 10vh 5vw;
+}
+
+.hero {
+    text-align: left;
+    width: 80%;
+    margin: 5vh 5vw 10vh;
+
+    h1:first-of-type {
+        margin: 0 0 10vh;
+    }
+
+    p {
+        padding: 1vh 0;
+    }
+}

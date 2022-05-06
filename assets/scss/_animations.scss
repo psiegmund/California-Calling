@@ -1,0 +1,27 @@
+@keyframes rotate {
+    0% {
+        // transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes banner {
+    0% {
+        transform: translateX(-450vw);
+    }
+
+    50% {
+        transform: translateX(0vw);
+    }
+
+    100% {
+        transform: translateX(-450vw);
+    }
+}

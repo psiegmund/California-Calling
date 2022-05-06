@@ -1,0 +1,22 @@
+@mixin flexit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+// Arguments hinzufügen für postion und size
+@mixin background {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 30%;
+}
+
+@mixin stuckElements {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 200px;
+}

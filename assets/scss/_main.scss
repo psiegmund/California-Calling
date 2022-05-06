@@ -1,0 +1,268 @@
+// =====================
+//     SECTION STUCK
+// =====================
+
+.stuckContainer {
+    color: black;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 240vh;
+    z-index: 5;
+
+    .stuckElements-1 {
+        position: absolute;
+        width: 42%;
+        margin: 0 auto;
+        top: 40vh;
+    }
+
+    .stuckElements-2 {
+        position: absolute;
+        width: 42%;
+        margin: 0 auto;
+        bottom: 45vh;
+    }
+
+    .stuckElements-img-1 {
+        background-image: url(../img/action1.jpeg);
+        @include stuckElements;
+        top: -10vh;
+        right: 8vw;
+    }
+
+    .stuckElements-img-2 {
+        background-image: url(../img/action2.jpeg);
+        @include stuckElements;
+        top: 20vh;
+        left: 5vw;
+        height: 15%;
+    }
+
+    .stuckElements-img-3 {
+        background-image: url(../img/action3.jpeg);
+        @include stuckElements;
+        right: 0;
+        top: 85vh;
+        height: 45%;
+    }
+
+    .stuckElements-img-4 {
+        background-image: url(../img/action4.jpeg);
+        @include stuckElements;
+        top: 115vh;
+        left: 22vw;
+        height: 60%;
+    }
+
+    .stuckElements-img-5 {
+        background-image: url(../img/action5.jpeg);
+        @include stuckElements;
+        top: 140vh;
+        right: 12vw;
+    }
+
+    .stuckElements-img-6 {
+        background-image: url(../img/action6.jpeg);
+        @include stuckElements;
+        left: 0;
+        top: 175vh;
+    }
+
+
+    // noch positionieren
+    .stuckElements-img-7 {
+        background-image: url(../img/action7.jpeg);
+        @include stuckElements;
+        top: 215vh;
+        right: 20vw;
+        width: 30%;
+        height: 250px;
+        z-index: 1;
+    }
+}
+
+// =====================
+//     SECTION GOLDEN BEAR
+// =====================
+
+.goldenBear {
+    background-color: black;
+    color: white;
+    padding: 10%;
+    height: 160vh;
+    position: relative;
+    z-index: 4;
+}
+
+.goldenBearContent {
+    display: flex;
+    align-items: flex-start;
+
+    div:first-of-type {
+        width: 50%;
+    }
+
+    div:last-of-type {
+        width: 50%;
+
+        p {
+            padding: 0;
+        }
+    }
+}
+
+.goldenBearImages {}
+
+.goldenBear-img-1 {
+    background-image: url(../img/goldenbear.png);
+    @include stuckElements;
+    width: 100%;
+    height: 55%;
+    top: 90vh;
+    z-index: 2;
+}
+
+.goldenBear-img-2 {
+    background-image: url(../img/gb2.png);
+    @include stuckElements;
+    width: 100%;
+    height: 40%;
+    left: 52%;
+    top: 105vh;
+    z-index: 3;
+}
+
+.goldenBear-img-3 {
+    background-image: url(../img/cc-circle-2.png);
+    background-position: center;
+    @include stuckElements;
+    width: 70%;
+    height: 70%;
+    right: -35%;
+    top: 105vh;
+    z-index: -1;
+    // mixin erstellen
+    animation: rotate 8s infinite linear;
+}
+
+// =====================
+//     SECTION POPPY BEAR
+// =====================
+
+.poppyBear {
+    background-color: white;
+    color: black;
+    padding: 10%;
+    height: 160vh;
+    position: relative;
+    z-index: 3;
+    margin: 40vh 0;
+}
+
+.poppyBearContent {
+    display: flex;
+    align-items: flex-start;
+
+    div:first-of-type {
+        width: 50%;
+    }
+
+    div:last-of-type {
+        width: 50%;
+
+        p {
+            padding: 0;
+        }
+    }
+}
+
+.poppyBear-img-1 {
+    background-image: url(../img/rosebear.png);
+    @include stuckElements;
+    width: 100%;
+    height: 55%;
+    top: 90vh;
+    left: 40vw;
+    z-index: 2;
+}
+
+.poppyBear-img-2 {
+    background-image: url(../img/pb3.png);
+    @include stuckElements;
+    width: 100%;
+    height: 40%;
+    left: 20vw;
+    top: 105vh;
+    z-index: 3;
+}
+
+// =====================
+//     SECTION JOIN US
+// =====================
+
+.joinUs {
+    background-color: black;
+    color: white;
+    padding: 10%;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.joinUsContent {
+    display: flex;
+    align-items: flex-start;
+
+    div:first-of-type {
+        width: 40%;
+
+        p {
+            padding: 0;
+        }
+    }
+}
+
+// BANDEROLE
+
+.bannerContainer {
+    display: flex;
+    position: relative;
+    height: 150px;
+    width: 150vw;
+    transform: rotate(45deg) translateX(-100vw);
+
+
+    .bannerBG {
+        position: absolute;
+        background-color: white;
+        height: 150px;
+        width: 150vw;
+        left: 50%;
+        z-index: 1;
+    }
+
+    .bannerText {
+        p {
+            position: absolute;
+            display: block;
+            color: black;
+            white-space: nowrap;
+            font-family: $fontLarish;
+            font-size: 10rem;
+            left: 50%;
+            transform: translateX(-550vw);
+            z-index: 2;
+            animation: banner 40s infinite linear;
+
+            span {
+                color: white;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+            }
+        }
+    }
+
+}

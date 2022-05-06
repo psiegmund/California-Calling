@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: $fontWork;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 10rem;
+    font-family: $fontLarish;
+    line-height: 0.9;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: $fontLarish;
+}
+
+h3 {
+    font-size: 11rem;
+    font-family: $fontLarish;
+    line-height: 10rem;
+}
+
+.standardText {
+    color: inherit;
+    font-family: $fontWork;
+    font-size: 2rem;
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+
+.sectionText {
+    color: inherit;
+    font-family: $fontLarish;
+    font-size: 3rem;
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+
+.reference {
+    font-size: 1.5rem;
+    font-family: $fontWork;
+}
+
+.rsvpButton {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid white;
+    padding: 25px 45px;
+    margin: 20px 0;
+}
+
+.rsvpButton:hover {
+    filter: invert(1);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
