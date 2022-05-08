@@ -76,6 +76,7 @@ h3 {
 
 .rsvpButton {
   background-color: #000;
+  font-size: 2rem;
   color: #fff;
   border: 1px solid white;
   padding: 25px 45px;
@@ -311,7 +312,7 @@ h3:nth-of-type(2) {
   height: 200px;
   width: 100%;
   height: 40%;
-  left: 55%;
+  left: 54%;
   top: 105vh;
   z-index: 3;
 }
@@ -367,7 +368,7 @@ h3:nth-of-type(2) {
   width: 50%;
   height: 50%;
   top: 90vh;
-  left: 40vw;
+  left: 42vw;
   z-index: 2;
 }
 
@@ -379,9 +380,9 @@ h3:nth-of-type(2) {
   width: 20%;
   height: 200px;
   width: 50%;
-  height: 35%;
-  left: 18vw;
-  top: 105vh;
+  height: 30%;
+  left: 22vw;
+  top: 110vh;
   z-index: 3;
 }
 
@@ -430,7 +431,7 @@ h3:nth-of-type(2) {
   color: black;
   white-space: nowrap;
   font-family: "Larish";
-  font-size: 10rem;
+  font-size: 12rem;
   left: 50%;
   transform: translateX(-550vw);
   z-index: 2;
