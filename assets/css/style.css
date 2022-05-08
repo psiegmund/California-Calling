@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  max-width: 1440px;
+  min-width: 375px;
   margin: 0 auto;
   font-family: "Work Sans", sans-serif;
   color: #fff;
@@ -28,7 +28,7 @@ body {
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: 11rem;
   font-family: "Larish";
   line-height: 0.9;
 }
@@ -52,6 +52,14 @@ h3 {
   line-height: 1.5;
 }
 
+.stuckText {
+  color: inherit;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  padding: 2rem 0;
+  line-height: 1.8;
+}
+
 .sectionText {
   color: inherit;
   font-family: "Larish";
@@ -61,8 +69,9 @@ h3 {
 }
 
 .reference {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-family: "Work Sans", sans-serif;
+  margin: 20px 0;
 }
 
 .rsvpButton {
@@ -75,11 +84,6 @@ h3 {
 
 .rsvpButton:hover {
   filter: invert(1);
-}
-
-a {
-  color: black;
-  text-decoration: none;
 }
 
 @keyframes rotate {
@@ -109,7 +113,8 @@ header {
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 30%;
-  margin: 0 0 10vh;
+  background-position: bottom 110px right;
+  background-size: 40%;
   padding: 0 0 10vh 0;
 }
 
@@ -118,16 +123,17 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 15vh;
+  height: 25vh;
   margin: 0 0 3vh;
 }
 
 .img-line {
-  height: 100%;
+  height: 200px;
   width: 100%;
 }
 
 h3:nth-of-type(2) {
+  color: black;
   color: black;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
@@ -143,11 +149,16 @@ h3:nth-of-type(2) {
 
 .hero {
   text-align: left;
-  width: 80%;
+  width: 90%;
   margin: 5vh 5vw 10vh;
 }
 .hero h1:first-of-type {
-  margin: 0 0 10vh;
+  margin: 0 0 25vh;
+}
+.hero h1:nth-of-type(2),
+.hero h1:nth-of-type(3),
+.hero h1:nth-of-type(4) {
+  margin: 2vh 0 2vh;
 }
 .hero p {
   padding: 1vh 0;
@@ -160,20 +171,23 @@ h3:nth-of-type(2) {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 240vh;
+  height: 245vh;
   z-index: 5;
 }
 .stuckContainer .stuckElements-1 {
   position: absolute;
-  width: 42%;
+  width: 39%;
   margin: 0 auto;
-  top: 40vh;
+  top: 55vh;
+}
+.stuckContainer .stuckElements-1 h1 {
+  font-size: 10rem;
 }
 .stuckContainer .stuckElements-2 {
   position: absolute;
-  width: 42%;
+  width: 39%;
   margin: 0 auto;
-  bottom: 45vh;
+  top: 170vh;
 }
 .stuckContainer .stuckElements-img-1 {
   background-image: url(../img/action1.jpeg);
@@ -192,7 +206,7 @@ h3:nth-of-type(2) {
   background-size: contain;
   width: 20%;
   height: 200px;
-  top: 20vh;
+  top: 35vh;
   left: 5vw;
   height: 15%;
 }
@@ -204,7 +218,7 @@ h3:nth-of-type(2) {
   width: 20%;
   height: 200px;
   right: 0;
-  top: 85vh;
+  top: 88vh;
   height: 45%;
 }
 .stuckContainer .stuckElements-img-4 {
@@ -225,8 +239,8 @@ h3:nth-of-type(2) {
   background-size: contain;
   width: 20%;
   height: 200px;
-  top: 140vh;
-  right: 12vw;
+  top: 135vh;
+  right: 16vw;
 }
 .stuckContainer .stuckElements-img-6 {
   background-image: url(../img/action6.jpeg);
@@ -236,7 +250,7 @@ h3:nth-of-type(2) {
   width: 20%;
   height: 200px;
   left: 0;
-  top: 175vh;
+  top: 171vh;
 }
 .stuckContainer .stuckElements-img-7 {
   background-image: url(../img/action7.jpeg);
@@ -246,16 +260,16 @@ h3:nth-of-type(2) {
   width: 20%;
   height: 200px;
   top: 215vh;
-  right: 20vw;
-  width: 30%;
-  height: 250px;
+  right: 15vw;
+  width: 40%;
+  height: 350px;
   z-index: 1;
 }
 
 .goldenBear {
   background-color: black;
   color: white;
-  padding: 10%;
+  padding: 15% 10%;
   height: 160vh;
   position: relative;
   z-index: 4;
@@ -269,7 +283,7 @@ h3:nth-of-type(2) {
   width: 50%;
 }
 .goldenBearContent div:last-of-type {
-  width: 50%;
+  width: 48%;
 }
 .goldenBearContent div:last-of-type p {
   padding: 0;
@@ -297,7 +311,7 @@ h3:nth-of-type(2) {
   height: 200px;
   width: 100%;
   height: 40%;
-  left: 52%;
+  left: 55%;
   top: 105vh;
   z-index: 3;
 }
@@ -322,10 +336,11 @@ h3:nth-of-type(2) {
   background-color: white;
   color: black;
   padding: 10%;
-  height: 160vh;
+  height: 190vh;
   position: relative;
+  overflow: hidden;
   z-index: 3;
-  margin: 40vh 0;
+  margin: 50vh 0 10vh;
 }
 
 .poppyBearContent {
@@ -349,8 +364,8 @@ h3:nth-of-type(2) {
   background-size: contain;
   width: 20%;
   height: 200px;
-  width: 100%;
-  height: 55%;
+  width: 50%;
+  height: 50%;
   top: 90vh;
   left: 40vw;
   z-index: 2;
@@ -363,9 +378,9 @@ h3:nth-of-type(2) {
   background-size: contain;
   width: 20%;
   height: 200px;
-  width: 100%;
-  height: 40%;
-  left: 20vw;
+  width: 50%;
+  height: 35%;
+  left: 18vw;
   top: 105vh;
   z-index: 3;
 }
@@ -374,10 +389,11 @@ h3:nth-of-type(2) {
   background-color: black;
   color: white;
   padding: 10%;
-  height: 100vh;
+  height: 110vh;
   position: relative;
-  z-index: 2;
   overflow: hidden;
+  z-index: 1;
+  overflow-wrap: break-word;
 }
 
 .joinUsContent {
@@ -385,7 +401,7 @@ h3:nth-of-type(2) {
   align-items: flex-start;
 }
 .joinUsContent div:first-of-type {
-  width: 40%;
+  width: 37%;
 }
 .joinUsContent div:first-of-type p {
   padding: 0;
@@ -396,7 +412,9 @@ h3:nth-of-type(2) {
   position: relative;
   height: 150px;
   width: 150vw;
+  left: 10%;
   transform: rotate(45deg) translateX(-100vw);
+  z-index: 1;
 }
 .bannerContainer .bannerBG {
   position: absolute;
@@ -423,25 +441,24 @@ h3:nth-of-type(2) {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
-footer {
+.footer {
   position: relative;
   background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10% 5%;
   z-index: 0;
 }
-footer .social img {
+.footer .social img {
   width: 25px;
   height: 25px;
   margin: 0 0 20px 0;
 }
-footer .sfdw {
+.footer .sfdw {
   text-align: right;
 }
-footer .sfdw img {
+.footer .sfdw img {
   width: 20%;
 }
 

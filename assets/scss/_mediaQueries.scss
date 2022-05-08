@@ -1,0 +1,101 @@
+// Small devices (landscape phones, 576px and up)
+// @media only screen and (min-width: 375px) and (max-width: 575px) {
+//     h1 {
+//         font-size: 3rem;
+//     }
+
+//     h2 {
+//         font-size: 2rem;
+//     }
+
+//     h3 {
+//         font-size: 3rem;
+//     }
+
+//     .stuckContainer {
+//         color: black;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: column;
+//         height: 240vh;
+//         z-index: 5;
+
+//         .stuckElements-1 {
+//             position: static;
+//             width: 90%;
+//             margin: 0 auto;
+//             top: 40vh;
+//         }
+
+//         .stuckElements-2 {
+//             position: static;
+//             width: 90%;
+//             margin: 0 auto;
+//             bottom: 45vh;
+//         }
+
+//         .stuckElements-img-1 {
+//             background-image: url(../img/action1.jpeg);
+//             @include stuckElementsMobile;
+//         }
+
+//         .stuckElements-img-2 {
+//             background-image: url(../img/action2.jpeg);
+//             @include stuckElementsMobile;
+//         }
+
+//         .stuckElements-img-3 {
+//             background-image: url(../img/action3.jpeg);
+//             @include stuckElementsMobile;
+//         }
+
+//         .stuckElements-img-4 {
+//             background-image: url(../img/action4.jpeg);
+//             @include stuckElementsMobile;
+//         }
+
+//         .stuckElements-img-5 {
+//             background-image: url(../img/action5.jpeg);
+//             @include stuckElementsMobile;
+//         }
+
+//         .stuckElements-img-6 {
+//             background-image: url(../img/action6.jpeg);
+//             @include stuckElementsMobile;
+//         }
+
+//         .stuckElements-img-7 {
+//             background-image: url(../img/action7.jpeg);
+//             @include stuckElementsMobile;
+//         }
+//     }
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media only screen and (min-width: 576px) and (max-width: 767px) {
+//     h3 {
+//         color: yellow;
+//     }
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media only screen and (min-width: 768px) and (max-width: 991px) {
+//     h3 {
+//         color: maroon;
+//     }
+// }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media only screen and (min-width: 992px) and (max-width: 1199px) {
+//     h3 {
+//         color: aqua;
+//     }
+// }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+//     h3 {
+//         color: green;
+//     }
+// }

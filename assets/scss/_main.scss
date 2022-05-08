@@ -9,21 +9,25 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 240vh;
+    height: 245vh;
     z-index: 5;
 
     .stuckElements-1 {
         position: absolute;
-        width: 42%;
+        width: 39%;
         margin: 0 auto;
-        top: 40vh;
+        top: 55vh;
+
+        h1 {
+            font-size: 10rem;
+        }
     }
 
     .stuckElements-2 {
         position: absolute;
-        width: 42%;
+        width: 39%;
         margin: 0 auto;
-        bottom: 45vh;
+        top: 170vh;
     }
 
     .stuckElements-img-1 {
@@ -36,7 +40,7 @@
     .stuckElements-img-2 {
         background-image: url(../img/action2.jpeg);
         @include stuckElements;
-        top: 20vh;
+        top: 35vh;
         left: 5vw;
         height: 15%;
     }
@@ -45,7 +49,7 @@
         background-image: url(../img/action3.jpeg);
         @include stuckElements;
         right: 0;
-        top: 85vh;
+        top: 88vh;
         height: 45%;
     }
 
@@ -60,26 +64,24 @@
     .stuckElements-img-5 {
         background-image: url(../img/action5.jpeg);
         @include stuckElements;
-        top: 140vh;
-        right: 12vw;
+        top: 135vh;
+        right: 16vw;
     }
 
     .stuckElements-img-6 {
         background-image: url(../img/action6.jpeg);
         @include stuckElements;
         left: 0;
-        top: 175vh;
+        top: 171vh;
     }
 
-
-    // noch positionieren
     .stuckElements-img-7 {
         background-image: url(../img/action7.jpeg);
         @include stuckElements;
         top: 215vh;
-        right: 20vw;
-        width: 30%;
-        height: 250px;
+        right: 15vw;
+        width: 40%;
+        height: 350px;
         z-index: 1;
     }
 }
@@ -91,7 +93,7 @@
 .goldenBear {
     background-color: black;
     color: white;
-    padding: 10%;
+    padding: 15% 10%;
     height: 160vh;
     position: relative;
     z-index: 4;
@@ -106,15 +108,13 @@
     }
 
     div:last-of-type {
-        width: 50%;
+        width: 48%;
 
         p {
             padding: 0;
         }
     }
 }
-
-.goldenBearImages {}
 
 .goldenBear-img-1 {
     background-image: url(../img/goldenbear.png);
@@ -130,7 +130,7 @@
     @include stuckElements;
     width: 100%;
     height: 40%;
-    left: 52%;
+    left: 55%;
     top: 105vh;
     z-index: 3;
 }
@@ -156,10 +156,11 @@
     background-color: white;
     color: black;
     padding: 10%;
-    height: 160vh;
+    height: 190vh;
     position: relative;
+    overflow: hidden;
     z-index: 3;
-    margin: 40vh 0;
+    margin: 50vh 0 10vh;
 }
 
 .poppyBearContent {
@@ -182,8 +183,8 @@
 .poppyBear-img-1 {
     background-image: url(../img/rosebear.png);
     @include stuckElements;
-    width: 100%;
-    height: 55%;
+    width: 50%;
+    height: 50%;
     top: 90vh;
     left: 40vw;
     z-index: 2;
@@ -192,9 +193,9 @@
 .poppyBear-img-2 {
     background-image: url(../img/pb3.png);
     @include stuckElements;
-    width: 100%;
-    height: 40%;
-    left: 20vw;
+    width: 50%;
+    height: 35%;
+    left: 18vw;
     top: 105vh;
     z-index: 3;
 }
@@ -207,10 +208,11 @@
     background-color: black;
     color: white;
     padding: 10%;
-    height: 100vh;
+    height: 110vh;
     position: relative;
-    z-index: 2;
     overflow: hidden;
+    z-index: 1;
+    overflow-wrap: break-word;
 }
 
 .joinUsContent {
@@ -218,7 +220,7 @@
     align-items: flex-start;
 
     div:first-of-type {
-        width: 40%;
+        width: 37%;
 
         p {
             padding: 0;
@@ -233,7 +235,9 @@
     position: relative;
     height: 150px;
     width: 150vw;
+    left: 10%;
     transform: rotate(45deg) translateX(-100vw);
+    z-index: 1;
 
 
     .bannerBG {
@@ -259,8 +263,7 @@
             animation: banner 40s infinite linear;
 
             span {
-                color: white;
-                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+                @include outlineBlack
             }
         }
     }
